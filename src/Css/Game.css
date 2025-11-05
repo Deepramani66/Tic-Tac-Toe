@@ -189,3 +189,91 @@ ol {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
 }
+
+/* ---------------- Responsive Design ---------------- */
+
+@media (max-width: 1024px) {
+  #game-container {
+    max-width: 90%;
+  }
+
+  #game-board button {
+    width: 6.5rem;
+    height: 6.5rem;
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #players {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  #players li {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #game-board {
+    gap: 1rem;
+  }
+
+  #game-board ol {
+    gap: 1rem;
+  }
+
+  #game-board button {
+    width: 5.5rem;
+    height: 5.5rem;
+    font-size: 3rem;
+  }
+
+  #pre-game button {
+    font-size: 3rem;
+  }
+
+  #game-over h2 {
+    font-size: 3rem;
+  }
+
+  #game-over p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #game-container {
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  #players li {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .player-name,
+  .player input {
+    width: 8rem;
+    font-size: 0.9rem;
+  }
+
+  #game-board button {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2rem;
+  }
+
+  #pre-game button {
+    font-size: 2.5rem;
+  }
+
+  #game-over h2 {
+    font-size: 2.5rem;
+  }
+
+  #game-over p {
+    font-size: 1.2rem;
+  }
+}
